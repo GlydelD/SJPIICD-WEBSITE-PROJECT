@@ -1,0 +1,259 @@
+* {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --blue: #000293;
+    --yellow: #FFE100;
+    --lightgrey: #F3F3F3;
+}
+
+.fontInter {
+    font-family: "Inter", sans-serif;
+}
+
+.fontPoly {
+    font-family: "Poly", sans-serif;
+}
+
+.fontTiro {
+    font-family: "Tiro Kannada", serif;
+}
+.navBar {
+    margin-top: 5vh;
+    width: 90%; 
+    max-width: 40vw; 
+    border-radius: 0.5rem;
+    height: 5vh;
+    background-color: var(--blue);
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    z-index: 9999;
+    padding: 0 1rem; 
+}
+
+.navContent {
+    flex: 1; 
+    text-align: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1rem; 
+}
+
+a:hover {
+    color: var(--yellow);
+}
+/*  */
+.offNav {
+    background-color: var(--yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 0.5rem;
+    color: var(--blue);
+    position:relative;
+    margin-right: -2vw;
+}
+
+#facultyBtn {
+    margin-right:3vw ;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--yellow);
+    border-radius: 0.5rem;
+    width: max-content;
+    z-index: 10;
+    width: 100%;
+    text-align: left;
+
+}
+.dropdown-item {
+    color: var(--blue);
+    padding: 0.5rem 1rem;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown-item:hover {
+    background-color: var(--yellow);
+    color: white;
+}
+
+.offNav:hover .dropdown {
+    display: block;
+}
+
+/*  */
+#caretDown {
+    width: 0.9rem;
+}
+
+.blueFont {
+    color: var(--blue);
+}
+
+.blueFont:hover {
+    color: var(--lightgrey);
+}
+
+/* css to modify */
+
+.coverPicCon {
+    width: 100%;
+    height: 50vh;
+    background-color: var(--lightgrey);
+    background-image: url(../media/homeBG.jpg); /* edit image*/
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.text {
+    margin-left: 10vw;
+    font-size: 3.5rem;
+    font-weight:bold;
+    padding-top: 40vh;
+    color: black;
+}
+
+.officesCon {
+    width: 100%;
+    height: 90vh;/* edit ra height ani sa con if di kaigo*/
+    display: flex;
+    justify-content: center;
+}
+
+.info {
+    width: 80vw;
+    height: 50vh;
+}
+
+
+.officeText {
+    margin-left: 1vw;
+    font-weight: 700;
+    padding-top: 8vh;
+    font-size: 3rem;
+    color: var(--blue);
+}
+.logo {
+    width:3vw;
+    height:5vh;
+    margin-top:4vh;
+    margin-left:50vw;
+    
+}
+.officePicCon {
+    display: grid;
+    grid-template-columns: 45% 66%;
+    justify-content: space-between;
+}
+
+.officePic, .officeInfo {
+    height: 65vh;
+}
+
+.officePic {
+    padding: 1vw;
+    background-image: url(../media/cashier.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left:-10vw;
+
+}
+
+.officesDes {
+    width: 40vw;
+    margin-top: 2vh; 
+    margin-left: 3vw;
+    color: var(--blue);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+
+.textDesc {
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 50vw;
+    padding: 1vw;
+    height: 20%;
+    font-weight: 200;
+}
+
+.officeTextDesc {
+    margin-top: 27vh;
+    font-weight: bold;
+    font-size:2rem;
+
+}
+.staff {
+    width:105vh;
+    background-color: var(--blue);
+    z-index:1;
+}
+.staffPic  {
+    width: 20vw;
+    height: auto;
+    margin-left:38.68vw;
+    margin-top:98vh;
+    z-index: 2;
+    position: absolute;
+    top: -10vh; 
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* FOOTER  */
+
+.footerCon {
+    background-color: var(--blue);
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerMainSection {
+    width: 90%;
+    height: 40vh;
+    display: flex;
+}
+
+.footerSection:nth-child(1) {
+    width: 45vw;
+    display: grid;
+    grid-template-columns: 22% 78%;
+    border-right: 3px solid white;
+    color: white;
+}
+
+.schoolLogo {
+    width: 20vh;
+}
+
+.subText {
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding-top: 3vh;
+}

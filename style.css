@@ -1,0 +1,574 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden; 
+}
+
+
+
+
+:root {
+    --blue: #000293;
+    --yellow: #FFE100;
+    --lightgrey: #F3F3F3;
+}
+
+.fontInter {
+    font-family: "Inter", sans-serif;
+}
+
+.fontPoly {
+    font-family: "Poly", sans-serif;
+}
+
+.fontTiro {
+    font-family: "Tiro Kannada", serif;
+}
+    
+  
+
+body {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.navBar {
+    margin-top: 5vh;
+    width: 45vw;
+    border-radius: 0.5rem;
+    height: 5vh;
+    background-color: var(--blue);
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 9999;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    color: var(--yellow);
+}
+
+.navContent {
+    text-align: center;
+}
+
+.enrollNav {
+    background-color: var(--yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 0.5rem;
+    color: var(--blue);
+    position:relative;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--yellow);
+    border-radius: 0.5rem;
+    width: max-content;
+    z-index: 10;
+    width: 100%;
+    text-align: left;
+
+}
+.dropdown-item {
+    color: var(--blue);
+    padding: 0.5rem 1rem;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown-item:hover {
+    background-color: var(--yellow);
+    color: white;
+}
+
+.enrollNav:hover .dropdown {
+    display: block;
+}
+
+#caretDown {
+    width: 0.9rem;
+}
+
+.blueFont {
+    color: var(--blue);
+}
+
+.blueFont:hover {
+    color: var(--lightgrey);
+}
+.upper {
+    font-family: "Marcellus", serif;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(images/Home\ bg.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    text-align: center;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    width: 200px; 
+    height: auto;
+    margin-bottom: -19%; 
+}
+
+.welcometext {
+    margin-bottom: 20%;
+    letter-spacing: 1px;
+    line-height: 100px;
+    font-size: 7rem; 
+    color: rgb(0, 0, 0); 
+    font-weight: bold;
+}
+
+.middle {
+    width: 100vw;
+    height: 50vh;
+    background-image: url('images/about.png'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.learn-more-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: 'Lato', sans-serif;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.2s;
+    text-align: center;
+}
+
+.learn-more-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+.about-us-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    max-width: 80%;
+}
+
+.about-text {
+    flex: 2;
+    font-family: 'Lato', sans-serif;
+    color: #ffffff;
+    padding: 10px;
+    text-align: left; 
+}
+
+.about-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.about-text b {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    font-weight: 300;
+    margin-bottom: 20px; 
+}
+
+.about-logo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.about-logo-img {
+    width: 180px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.lower {
+    width: 100vw;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.gallery-title {
+    font-family: 'Ramabhadra', sans-serif;
+    font-weight: bolder;
+    font-size: 2.5rem;
+    color: #333;
+    text-align: left;
+    letter-spacing: 1px;
+    position: relative;
+    left: -16vw; 
+}
+.news-gallery {
+    position: relative;
+    width: 80%;
+    max-width: 1200px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.carousel-wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px 20px;
+    z-index: 10;
+    font-size: 2rem; 
+    outline: none;
+    transition: background-color 0.3s ease;
+    width: 50px; 
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+    left: 10px; 
+}
+
+.next {
+    right: 10px; 
+}
+.news-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 20px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.news-item {
+    font-family: 'Lato', sans-serif;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.news-img {
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+    object-fit: cover;
+}
+
+.news-text h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.news-text p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.4;
+}
+.news-link {
+    color: inherit; 
+    text-decoration: none; 
+}
+
+.news-link:hover {
+    color: #007BFF; 
+    text-decoration: none; 
+}
+
+
+@media (max-width: 768px) {
+    .news-list {
+        grid-template-columns: 1fr; 
+    }
+}
+.announcements {
+    width: 100vw;
+    background-color: #f4f4f9;
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+    box-sizing: border-box;
+    margin-top: 20px; 
+}
+
+.announcements-title {
+    font-family: 'Ramabhadra', sans-serif;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+}
+
+.announcement-item {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 22%; 
+    padding: 10px;
+    margin: 10px;
+    font-family: 'Lato', sans-serif;
+    color: #444;
+    text-align: center;
+    box-sizing: border-box;
+    transition: transform 0.3s, background-color 0.3s;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+}
+
+.announcement-image {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+}
+
+.announcement-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-top: 10px;
+    padding: 5px; 
+}
+
+.announcement-item:hover {
+    background-color: #f0f8ff; 
+    transform: scale(1.05); 
+}
+
+@media (max-width: 768px) {
+    .announcement-item {
+        width: 48%;
+    }
+}
+
+@media (max-width: 480px) {
+    .announcement-item {
+        width: 100%; 
+    }
+}
+.follow-pages {
+    font-family: 'Lato', sans-serif;
+    margin-top: 40px; 
+    text-align: center;
+}
+
+.follow-message {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin-bottom: 10px; 
+}
+
+.icon-image {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.icon-name {
+    font-size: 1rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between; 
+    padding: 20px;
+    background: linear-gradient(135deg, #1100a8, #2575fc); 
+    color: #fff; 
+    box-sizing: border-box;
+    margin-top: 30px; 
+    position: relative;
+}
+
+.contact-left, .contact-right {
+    flex: 1; 
+}
+
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 10px;
+    text-align: center; 
+}
+
+.contact-logo {
+    width: 40%; 
+    height: auto;
+    margin-bottom: 20px; 
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin-bottom: 15px; 
+}
+
+.contact-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px; 
+    object-fit: cover;
+    border-radius: 50%; 
+}
+
+.contact-text {
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.contact-right {
+     /* diri sumpayi sa contacts */
+}
+.contact::before {
+    content: '';
+    position: absolute;
+    top: 10%;
+    bottom: 10%;
+    left: 50%; 
+    width: 2px; 
+    background-color: #fff; 
+    transform: translateX(-50%); 
+}
+
+.footer {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9rem;
+}
+.clearance-section {
+    margin-top: 20px; /* Adjusts spacing below the welcome text */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Creates space between text and button */
+}
+
+.clearance-text {
+    font-size: 1.5rem; /* Adjust font size as needed */
+    font-family: 'Lato', sans-serif;
+    color: #333;
+}
+
+.access-button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: 'Lato', sans-serif;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.access-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
