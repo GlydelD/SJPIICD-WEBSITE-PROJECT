@@ -5,6 +5,8 @@ This is a project for the **Web System and Technologies (PF117)** subject, showc
 ## Disclaimer
 **This is not the official website of St. John Paul II College of Davao.** This project was created as part of a course requirement for **Web System and Technologies (PF117)**. It is a student-developed project for educational purposes only.
 
+![Website Screenshot](images/website_screenshot.png)  
+
 ## Features
 - **Courses Offered**: Details of all academic programs and courses available.
 - **Faculty & Staff**: Information about the college’s faculty and administrative staff.
