@@ -19,7 +19,7 @@ This project was developed by **Glydel Joy Despojo**, **Judel Bagisan**, and **R
 - **Key School Offices**: Information about various offices within the college (e.g., Registrar, Accounting, etc.).
 - **Campus News & Updates**: Latest news and announcements from the college.
 
-## Technologies Used
+## Technologies
 - **HTML**
 - **CSS**
 - **JavaScript**
