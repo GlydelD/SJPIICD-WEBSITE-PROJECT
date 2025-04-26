@@ -20,9 +20,9 @@ This project was developed by **Glydel Joy Despojo**, **Judel Bagisan**, and **R
 - **Campus News & Updates**: Latest news and announcements from the college.
 
 ## Technologies Used
-- **HTML**: For creating the structure and content of the web pages.
-- **CSS**: For styling the web pages and layout.
-- **JavaScript**: For interactivity and dynamic elements on the site.
+- **HTML**
+- **CSS**
+- **JavaScript**
 
 ## Installation
 
