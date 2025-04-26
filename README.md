@@ -2,29 +2,29 @@
 
 This is a project for the **Web System and Technologies (PF117)** subject, showcasing the **St. John Paul II College of Davao** website. It includes information about courses, faculty, staff, events, and key school offices.
 
-## Disclaimer
+-------Disclaimer-------
 **This is not the official website of St. John Paul II College of Davao.** This project was created as part of a course requirement for **Web System and Technologies (PF117)**. It is a student-developed project for educational purposes only.
 
 This project was developed by **Glydel Joy Despojo**, **Judel Bagisan**, and **Rain Cereno**, with information and pictures provided by classmates.
 
-### Front-End Screenshots:
+-------Front-End Screenshots-------
 ![Website Screenshot](images/home.png)  
 ![Website Screenshot](images/courses.png)  
 ![Website Screenshot](images/offices.png)  
 
-## Features
+-------Features-------
 - **Courses Offered**: Details of all academic programs and courses available.
 - **Faculty & Staff**: Information about the college’s faculty and administrative staff.
 - **Course Events**: Events related to each course offered by the school.
 - **Key School Offices**: Information about various offices within the college (e.g., Registrar, Accounting, etc.).
 - **Campus News & Updates**: Latest news and announcements from the college.
 
-## Technologies
+-------Technologies-------
 - **HTML**
 - **CSS**
 - **JavaScript**
 
-## Installation
+-------Installation-------
 
 1. Clone this repository:
    ```bash
@@ -40,6 +40,5 @@ This project was developed by **Glydel Joy Despojo**, **Judel Bagisan**, and **R
 
 4. Run the project.
 
-## License
-
+-------License-------
 This project is licensed under the **MIT License**
